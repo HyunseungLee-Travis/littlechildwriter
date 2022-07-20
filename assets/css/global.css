@@ -1,0 +1,45 @@
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #23262e !important;
+}
+
+/* Theme */
+.theme--dark.v-application {
+  background-color: #23262e !important;
+}
+
+/* Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom */
+.zmax {
+  z-index: 999;
+}
+
+.gap5 {
+  gap: 5px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
+}

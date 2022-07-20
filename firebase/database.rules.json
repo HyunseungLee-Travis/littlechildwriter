@@ -1,0 +1,19 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "contents": {
+      ".indexOn": ["/time", "/likes"],
+      ".write": "auth.uid != null"
+    },
+    "users": {
+      ".indexOn": "/libris",
+      "$userId": {
+      	".write": "$userId === auth.uid"
+      },
+      "recAlgo": {
+        ".indexOn": ".value"
+      }
+    }
+  }
+}
